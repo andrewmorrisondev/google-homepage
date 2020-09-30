@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 548px;
+  min-height: 548px;
+}
+#header-main {
+  background-color: green;
+  width: auto;
+  height: 65px;
+}
+#main-content {
+  background-color: blueviolet;
+  width: auto;
+  height: 398px;
+  padding-bottom: 20px;
+}
+#footer-main {
+  background-color: coral;
+  height: 65px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
