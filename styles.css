@@ -5,17 +5,67 @@ center {
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 100;
   font-stretch: expanded;
+  color: #222;
+  font-size: small;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+li {
+  float: left;
+  margin-left: 30px;
+  margin-top: 23px;
 }
 #header-main {
-  background-color: green;
   width: auto;
   height: 65px;
+  display: block;
+  direction: ltr;
+  min-height: 65px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none transparent;
+  -webkit-locale: "en";
+}
+.head-left {
+  float: left;
+}
+#box-img {
+  float: right;
+}
+.head-right {
+  float: right;
+}
+#box-img {
+  float: right;
+}
+#box-img-img {
+  height: 20px;
+  width: 40px;
+  margin: 17 10;
+  opacity: 0.6;
+}
+#sign-in {
+  float: right;
+  border: 1px solid #376ff0;
+  border-radius: 2px;
+  padding: 8 10;
+  margin-top: 14px;
+  margin-right: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #376ff0;
+  cursor: default;
+
 }
 #main-content {
-  background-color: blueviolet;
   width: auto;
   height: 398px;
   padding-bottom: 20px;
@@ -23,41 +73,56 @@ body {
 }
 #footer-main {
   background-color: coral;
-  height: 65px;
+  height: 45px;
   width: 100%;
   position: absolute;
   bottom: 0;
+  line-height: 8px;
+  border: 1px solid #dddddd;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-color: #f2f2f2;
+  font-size: 14px;
+}
+#footer-left {
+  float: left;
+}
+#footer-right {
+  float: right;
+  margin-right: 30px;
 }
 #logo {
   margin: auto;
   width: 50%;
   text-align: center;
-  background-color: darkgray;
   padding-bottom: 25px;
   
 }
 #search-bar {
-  width: 45%;
+  width: 584px;
   height: 65px;
   text-align: center;
-  background-color: yellow;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
+  padding-top: 6px;
+  display: block;
+  overflow: visible;
 }
 .button-loc {
   width: 50%;
-  height: 65px;
+  height: 62px;
   text-align: center;
-  background-color: turquoise;
   margin: auto;
 }
 #text-box {
   border-radius: 30px;
   border-width: 1px;
-  border-color: lightgrey;
+  border-color: #f2f2f2;
   width: 100%;
   margin: auto;
   height: 50px;
+}
+#text-box:hover {
+  box-shadow: 0px 0px 2px #666;
 }
 .buttons {
   border-radius: 4px;
@@ -74,4 +139,22 @@ body {
   min-width: 54px;
   text-align: center;
   font-size: 14px;
+  -webkit-appearance: none;
+  
+}
+.buttons:hover {
+  border: 1px solid #666;
+  cursor: pointer;
+}
+a:link {
+  text-decoration: none;
+  color: #222;
+}
+a:visited {
+  text-decoration: none;
+  color: #222;
+}
+a:hover {
+  text-decoration: underline;
+  color: #222;
 }
